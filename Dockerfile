@@ -11,6 +11,6 @@ ADD . .
 
 RUN pip --no-cache-dir install --upgrade pip && pip --no-cache-dir install .[api,cloud]
 
-# ENTRYPOINT ["bin/startup.sh"]
-ENTRYPOINT ["bin/startup.sh", "-c", "/etc/startup.conf"]
+ENTRYPOINT ["bin/startup.sh"]
+# ENTRYPOINT ["bin/startup.sh", "-c", "/etc/startup.conf"]
 
